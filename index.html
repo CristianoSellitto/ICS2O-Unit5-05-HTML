@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Cristiano | ICS2O-Unit0-00-HTML | Date 2022 -->
+<!-- Cristiano | ICS2O-Unit5-05-HTML | May 4 2022 -->
 <html lang="en-ca">
   <head>
     <meta charset="utf-8">
@@ -8,15 +8,15 @@
     <meta name="author" content="Cristiano Sellitto">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#FFFFFF" />
-    <link rel="canonical" href="https://cristianosellitto.github.io/<RESPITORY>/" />
-    <link rel="manifest" href="/<RESPITORY>/manifest.webmanifest" />
+    <link rel="canonical" href="https://cristianosellitto.github.io/ICS2O-Unit5-05-HTML/" />
+    <link rel="manifest" href="/ICS2O-Unit5-05-HTML/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"></noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <title>My Website</title>
+    <title>Finding Types of Triangles</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -25,7 +25,7 @@
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
           <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">Museum Entry</span>
+            <span class="mdl-layout-title">Finding Types of Triangles</span>
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-layout--large-screen-only">
               <a class="mdl-navigation__link" href="./">Index</a>
@@ -37,10 +37,36 @@
     <br>
     <br>
     <br>
-    <h3>Hello, World!</h3>
+    <h3>Enter triangle's side lengths:</h3>
+    <!-- Side 1 Textfield -->
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="float" pattern="-?[0-9]*(\.[0-9]+)?" id="side1">
+        <label class="mdl-textfield__label" for="side1">Side 1...</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+    </form>
+    <!-- Side 2 Textfield -->
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="float" pattern="-?[0-9]*(\.[0-9]+)?" id="side2">
+        <label class="mdl-textfield__label" for="side2">Side 2...</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+    </form>
+    <!-- Side 3 Textfield -->
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="float" pattern="-?[0-9]*(\.[0-9]+)?" id="side3">
+        <label class="mdl-textfield__label" for="side3">Side 3...</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+    </form>
     <!-- Accent-colored raised button with ripple -->
     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="onButtonClick()">
-      Alert
+      See Type of Triangle
     </button>
+    <br>
+    <div id="result"></div>
   </body>
 </html>

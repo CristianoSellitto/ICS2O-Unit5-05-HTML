@@ -1,4 +1,4 @@
-var GHPATH = "/respitory"
+var GHPATH = "/ICS2O-Unit5-05-HTML"
 var APP_PREFIX = "gppwa_"
 var VERSION = "version_001"
 var URLS = [
