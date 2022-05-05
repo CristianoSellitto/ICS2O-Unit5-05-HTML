@@ -22,11 +22,15 @@ function onButtonClick() {
   const allsidesmatch = Boolean(side1 == side2 && side2 == side3)
   const twosidesmatch = Boolean(side1 == side2 && side2 != side3 || side2 == side3 && side3 != side1 || side1 == side3 && side3 != side2)
 
-  if (allsidesmatch == true) {
+  if (side1 > 0 && side2 > 0 && side3 > 0) {
+    if (allsidesmatch == true) {
     document.getElementById("result").innerHTML = "<h5>This triangle is equilateral.</h5>"
-  } else if (twosidesmatch == true) {
-    document.getElementById("result").innerHTML = "<h5>This triangle is isosceles.</h5>"
+    } else if (twosidesmatch == true) {
+      document.getElementById("result").innerHTML = "<h5>This triangle is isosceles.</h5>"
+    } else {
+      document.getElementById("result").innerHTML = "<h5>This triangle is scalene.</h5>"
+    }
   } else {
-    document.getElementById("result").innerHTML = "<h5>This triangle is scalene.</h5>"
+    document.getElementById("result").innerHTML = "<h5>Please enter valid numbers.</h5>"
   }
 }
