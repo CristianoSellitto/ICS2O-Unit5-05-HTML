@@ -20,7 +20,7 @@ function onButtonClick() {
   const side2 = document.getElementById("side2").value
   const side3 = document.getElementById("side3").value
 
-  if (side1 > 0 && side2 > 0 && side3 > 0) {
+  if (side1 > 0 && side2 > 0 && side3 > 0) { // Checks if one of the numbers is negative
     if (side1 == side2 && side2 == side3) {
     document.getElementById("result").innerHTML = "<h5>This triangle is equilateral.</h5>"
     } else if (side1 == side2 && side2 != side3 || side2 == side3 && side3 != side1 || side1 == side3 && side3 != side2) {
